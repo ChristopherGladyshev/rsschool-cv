@@ -21,4 +21,12 @@
      <a class="contact" href="https://join.skype.com/invite/mQ7m7ccls4tD" style="cursor:pointer"><img src="https://img.shields.io/badge/<handle>-%2300AFF0.svg?style=for-the-badge&logo=Skype&logoColor=white"></a>
  </div>
 
- 
+ <h3 style="font-size:25px;">Briefly About Myself:</h3>
+ <p>
+ I have more than 3 years of experience as a front-end developer and more than 5 years of fullstack practice, during all this time I have dealt with many tasks on Angular js, reactjs and Vuejs, set up various project builders such as Webpack and Gulp, worked with docker containers, CI / CD configurations are raised by VDS / VPS, certificates for NGINX are configured and generated, MongoDB and Postgress databases are raised, apis of varying complexity are written on Node js / Express / Mongos.
+I also have some experience with PHP, Python, C++ and C#.
+Git-hub https://github.com/ChristopherGladyshev
+My little website VDS https://si-cat.ru/ (I often do various experiments, so it may not be available or may not work correctly)
+ </p>
+
+
