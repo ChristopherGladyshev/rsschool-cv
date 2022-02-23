@@ -7,7 +7,6 @@
      <h3 style="font-size:25px;">My contacts</h3>
      <div>
         <div style="disply: flex; display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="https://img.icons8.com/ios/344/apple-phone.png" style="max-width: 40px; margin-right: 10px">
             <a href="tel:+79996978942" style="cursor: pointer; margin-right: 20px">+79996978942</a>
         </div>
         <div>
