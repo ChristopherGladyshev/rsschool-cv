@@ -1,0 +1,270 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+.container--home {
+    padding-top: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.container--header {
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.nav-link-toggler {
+    display: block;
+    background-color: white;
+    width: 50px;
+    height: 24px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.nav-link-toggler::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: '';
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.nav-link-toggler--active::before {
+    transform: translateX(25px);
+}
+
+.nav-link--lang-text {
+    position: absolute;
+    top: -13px;
+    left: 6px;
+    font-size: 10px;
+}
+
+.nav-link--active {
+    opacity: .3;
+}
+
+
+
+@media screen and (max-width: 590px) {
+
+    .nav {
+        display: none;
+        padding: 0;
+    }
+
+    .nav-active {
+        display: flex;
+        width: 100%;
+        background: black;
+        height: 100%;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .nav-link {
+        margin: 0;
+        margin-bottom: 10px;
+        padding-left: 24px;
+        font-size: 43px;
+        letter-spacing: 0.14em;
+    }
+
+    .nav-link-toggler {
+        height: 34px;
+        width: 74px;
+        margin-top: 14px;
+    }
+
+    .nav-link-toggler::before {
+        top: 1px;
+        left: 1px;
+        content: '';
+        height: 32px;
+        width: 32px;
+    }
+
+    .nav-link-toggler--active::before {
+        transform: translateX(40px);
+    }
+
+    .nav-phone {
+        position: fixed;
+        top: 12px;
+        right: 0;
+        background-color: white;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        display: block;
+        cursor: pointer;
+        margin-right: 24px;
+        transition: all .3s;
+    }
+
+
+
+    .nav-burger,
+    .nav-burger:before,
+    .nav-burger:after {
+        transition: all .3s;
+        position: absolute;
+        content: '';
+        height: 4px;
+        border-radius: 2px;
+        background-color: black;
+        width: 45px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-burger::before {
+        top: -10px;
+    }
+
+    .nav-burger::after {
+        top: 14px;
+    }
+
+    .container--header {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .wrapper {
+        box-shadow: none
+    }
+
+    .icon--user {
+        margin: 0;
+    }
+}
+
+.burger--active {
+    background-color: #111;
+}
+
+.burger--active .nav-burger:before,
+.burger--active .nav-burger:after {
+    background-color: white;
+}
+
+.burger--active .nav-burger:before,
+.burger--active .nav-burger:after {
+    top: 0;
+    left: 0;
+}
+
+.burger--active .nav-burger {
+    background-color: #111;
+}
+
+.burger--active .nav-burger:before {
+    transform: rotate(-45deg)
+}
+
+.burger--active .nav-burger:after {
+    top: 0;
+    transform: rotate(45deg)
+}
+
+
+.nav-burger {}
+
+.nav-link:nth-child(1) {
+    margin-left: 0;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.516);
+}
+
+.icon--user {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.text {
+    padding: 0 20px 20px;
+    max-width: 606px;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden--page {
+    display: none;
+}
+.contact-item {
+    padding: 10px 0px;
+}
+
+.contact-link{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+ color: rgba(255, 255, 255, 0.654);
+}
+
+@media screen and (max-width: 1120px) {
+
+    .icon-wrapper {
+        padding: 30px 20px 0;
+    }
+
+    .icon--user {
+        margin-right: 0;
+    }
+}

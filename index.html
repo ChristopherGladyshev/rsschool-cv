@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container--header">
+            <nav class="nav js-nav-phone">
+                <span class="nav-link js-link nav-link--active js-ru" data-page="home">Главная</span>
+                <span class="nav-link js-link js-ru" data-page="work">Работы</span>
+                <span class="nav-link js-link js-ru" data-page="contacts">Контакты</span>
+                <span class="nav-link js-link js-en hidden" data-page="home">Home</span>
+                <span class="nav-link js-link js-en hidden" data-page="work">Work</span>
+                <span class="nav-link js-link js-en hidden" data-page="contacts">Contacts</span>
+                <span class="nav-link">
+                    <span class="nav-link-toggler js-toggler-lang">
+                        <span class="nav-link--lang-text">RU/EN</span>
+                    </span>
+                </span>
+            </nav>
+            <div class="nav-phone js-burger">
+                <span class="nav-burger"></span>
+            </div>
+        </div>
+    </header>
+    <div class="root">
+        <div class="container container--home js-page" data-page="home">
+            <div class="wrapper">
+                <div class="icon-wrapper">
+                    <img class="icon icon--user" src="https://avatars.githubusercontent.com/u/59413459?v=4" alt="icon">
+                </div>
+                <div class="text">
+                    <h1 class="js-en hidden">Hi there, I'm Christopher</h1>
+                    <p class="js-en hidden">I have more than 3 years of experience as a front-end developer and more
+                        than 5 years of fullstack practice, during all this time I have dealt with many tasks on Angular
+                        js, reactjs and Vuejs, set up various project builders such as Webpack and Gulp, worked with
+                        docker containers, CI / CD configurations are raised by VDS / VPS, certificates for NGINX are
+                        configured and generated, MongoDB and Postgress databases are raised, apis of varying complexity
+                        are written on Node js / Express / Mongos.
+                        I also have some experience with PHP, Python, C++ and C#.</p>
+                    <h1 class="js-ru">Привет меня зовут Xристофор</h1>
+                    <p class="js-ru">Имею более 3-х лет опыта фронтенд-разработчика и более 5-ти лет фуллстек-практики,
+                        за все это время я решал множество задач на Angular js, reactjs и Vuejs, настраивал различные
+                        сборщики проектов, такие как Webpack и Gulp, работал с docker контейнерами, CI/CD конфигурации
+                        подняты VDS/VPS, настроены и сгенерированы сертификаты для NGINX, подняты базы MongoDB и
+                        Postgress, написаны apis разной сложности на Node js/Express/Mongos.
+                        У меня также есть некоторый опыт работы с PHP, Python, C++ и C#.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container container--home js-page hidden--page" data-page="work">
+            <h3 class="js-en hidden">todo app react and nodejs</h3>
+            <p class="js-en hidden">Classic app written in React, Express and Mongose.</p>
+            <h3 class="js-ru">Приложениe лист задач</h3>
+            <p class="js-ru">Классическое приложение написанное на React & Express и MongoDB</p>
+            <a href="https://github.com/ChristopherGladyshev/todo">Todo List</a>
+        </div>
+
+        <div class="container container--home js-page hidden--page" data-page="contacts">
+            <ul class="js-ru">
+                <li class="contact-item">Телефон: +7 999 697-89-42</li>
+                <li class="contact-item">Skype: tima-9992</li>
+                <li class="contact-item">Email: tima-999@inbox.ru</li>
+                <li class="contact-item"><a class="contact-link" href="https://t.me/izecRed">Ссылка Telegram</a></li>
+                <li class="contact-item">Адрес: Rostov-on-Don</li>
+            </ul>
+            <ul class="js-en hidden">
+                <li class="contact-item">Phone: +7 999 697-89-42</li>
+                <li class="contact-item">Skype: tima-9992</li>
+                <li class="contact-item">Email: tima-999@inbox.ru</li>
+                <li class="contact-item"><a class="contact-link" href="https://t.me/izecRed">Telegram link</a></li>
+                <li class="contact-item">Address: Rostov-on-Don</li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
